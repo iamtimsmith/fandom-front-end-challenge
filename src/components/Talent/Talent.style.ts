@@ -13,7 +13,7 @@ export const TalentButton = styled.button<ITalentButton>`
 	border: none;
 	cursor: pointer;
 	box-shadow: ${(props) => props.active ?
-		`0 0 5px rgba(255,255,255,0.8)` : ``};
+		`0 0 5px rgba(255,255,255,0.8)` : `none`};
 	z-index: 2;
 
 	&:after {

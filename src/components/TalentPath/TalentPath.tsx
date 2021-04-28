@@ -44,6 +44,7 @@ const TalentPath = ({title, items}: ITalentPathProps) => {
 		}
 	}
 
+	// If user removes item that isn't current tier
 	const decrementMany = () => {
 		setTier(toBeRemoved);
 		setShowModal(false);
@@ -52,7 +53,7 @@ const TalentPath = ({title, items}: ITalentPathProps) => {
 	}
 
 	return (
-		<TalentPathContainer>
+		<TalentPathContainer data-testid='TalentPathContainer'>
 			<TalentPathTitle>{title}</TalentPathTitle>
 			<TalentPathTalents>
 				{items.map((item, key) => (
