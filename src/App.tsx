@@ -17,10 +17,10 @@ const App = () => {
 		{name: 'Crown', pos: -150, tier: 4},
 	];
 	const pathTwo = [
-		{name: 'Chevron', pos: -200, tier: 1},
-		{name: 'Silverware', pos: -250, tier: 2},
-		{name: 'Cake', pos: -300, tier: 3},
-		{name: 'Crown', pos: -350, tier: 4},
+		{name: 'Ship', pos: -200, tier: 1},
+		{name: 'Snorkel', pos: -250, tier: 2},
+		{name: 'Lightning', pos: -300, tier: 3},
+		{name: 'Death', pos: -350, tier: 4},
 	];
 
   return (

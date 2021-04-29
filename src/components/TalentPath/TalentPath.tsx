@@ -46,9 +46,9 @@ const TalentPath = ({title, items}: ITalentPathProps) => {
 
 	// If user removes item that isn't current tier
 	const decrementMany = () => {
-		setTier(toBeRemoved);
+		setTier(toBeRemoved - 1);
 		setShowModal(false);
-		setPointsUsed(pointsUsed - (tier - toBeRemoved));
+		setPointsUsed(pointsUsed - (tier - (toBeRemoved - 1)));
 		setToBeRemoved(-1);
 	}
 
@@ -66,7 +66,7 @@ const TalentPath = ({title, items}: ITalentPathProps) => {
 						/>
 					</React.Fragment>
 				))}
-				<TalentPathProgress talents={items.length}tier={tier} />
+				<TalentPathProgress talents={items.length} tier={tier} />
 			</TalentPathTalents>
 			{showModal &&
 				<Modal close={() => setShowModal(false)}>
